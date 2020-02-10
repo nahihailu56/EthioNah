@@ -34,7 +34,7 @@ function EthioNah_customize_register($wp_customize){
 
 	// Button Text Setting
 	$wp_customize->add_setting('nah_btn_text', array(
-		'default'		=> _x('Sign Up', 'EthioNah'),
+		'default'		=> _x('Visit Us', 'EthioNah'),
 		'type'			=> 'theme_mod'
     ));
     // Background Image Setting
@@ -120,7 +120,7 @@ function EthioNah_customize_register($wp_customize){
 	  ));
 	// Button URL Setting
 	$wp_customize->add_setting('nah_btn_url', array(
-		'default'		=> _x('http://test.com', 'EthioNah'),
+		'default'		=> _x('http://google.com', 'EthioNah'),
 		'type'			=> 'theme_mod'
 	));
 

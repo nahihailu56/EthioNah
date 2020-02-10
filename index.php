@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 
     <section class="row title-nah">
-      <div class="container">
+      <div class="container-fluid">
         <div class="col-md-12">
           <h1><?php echo __('Blog'); ?></h1>
         </div>
       </div>
     </section>  
-
-
+    
   <section class="row main">
     <div class="container">
       <?php if(is_active_sidebar('sidebar')) : ?>
@@ -54,9 +53,10 @@
                     ?>
                 </li>
               </ul>
-                <h3><?php the_title(); ?></h3>
-                  <?php the_excerpt(); ?>
+              <h3><?php the_title(); ?></h3>
+                <?php the_excerpt(); ?>
               </div>
+              
             </article>
             <div class="clr"></div>
           <?php endwhile; ?>
@@ -69,6 +69,13 @@
       <?php endif; ?>
     </div>
   </section>
+  <?php if(is_active_sidebar('content-region-1')) : ?>
+      <?php dynamic_sidebar('content-region-1'); ?>
+    <?php endif; ?>
+
+    <?php if(is_active_sidebar('content-region-2')) : ?>
+      <?php dynamic_sidebar('content-region-2'); ?>
+    <?php endif; ?>
 
      
 

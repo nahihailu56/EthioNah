@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 <section class="row title-nah">
-    <div class="container">
-       <div class="col-md-12">
-          <h1>Home</h1>
-       </div>
-    </div>
-  </section>
+        <div class="container">
+            <div class="col-md-8">
+                <h1>Home</h1>
+       </div>    
+            
+        </div>  
+    </section>
       <div class="nahhead">
         <div class="container">
           <h1><?php echo get_theme_mod('nah_heading', 'EthioNah Title'); ?></h1>
@@ -32,6 +33,16 @@
           </div>
         </div>
       </section>
+      <?php if(is_active_sidebar('content-region-1')) : ?>
+       <?php dynamic_sidebar('content-region-1'); ?>
+      <?php endif; ?>
+
+       <?php if(is_active_sidebar('content-region-2')) : ?>
+          <?php dynamic_sidebar('content-region-2'); ?>
+      <?php endif; ?>
+
+      </div>
+   </section>
 <?php get_footer(); ?>     
 
      

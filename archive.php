@@ -60,4 +60,12 @@
     </div>
   </section>
 
+  <?php if(is_active_sidebar('content-region-1')) : ?>
+      <?php dynamic_sidebar('content-region-1'); ?>
+    <?php endif; ?>
+
+    <?php if(is_active_sidebar('content-region-2')) : ?>
+      <?php dynamic_sidebar('content-region-2'); ?>
+    <?php endif; ?>
+
 <?php get_footer(); ?>

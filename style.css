@@ -164,6 +164,7 @@ SS .pt20 {
 .title-nah {
     background: #c75d07;
     color: #ffffff;
+    padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 6px #ddd solid;
