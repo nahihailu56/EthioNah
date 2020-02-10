@@ -1,1 +1,1 @@
-# EthioNah
+#EthioNah Wordpress Theme by Nahom Hailu
